@@ -63,7 +63,7 @@ function handleFiles() {
                                 && (features[i].geometry.coordinates[0] == featureList[j].koord1)
                                 && (features[i].geometry.coordinates[1] == featureList[j].koord2)){
                                     const tabbleRows = document.getElementsByTagName("tr");
-                                    const taaRinda = tabbleRows[j];
+                                    const taaRinda = tabbleRows[j + 1];
                                     rowCells = taaRinda.getElementsByTagName("td");
                                     if (features[i].properties["Parauga nr"] && features[i].properties["Parauga nr"] != "-"){
                                         const plusParaugaNr = "; " + features[i].properties["Parauga nr"];
